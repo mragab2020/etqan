@@ -3,171 +3,317 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eng. Abdallah Mahmoud | Civil Engineer</title>
-  <meta name="description" content="الموقع الرسمي للمهندس عبدالله محمود - مهندس مدني" />
+
+  <title>Etqan | اتقان للهندسة المدنية والتصميم الإنشائي</title>
+
+  <meta
+    name="description"
+    content="Etqan | اتقان للهندسة المدنية والتصميم الإنشائي والاستشارات الهندسية. نقدم خدمات التقسيم المعماري، التصميم الإنشائي، الحصر، الشوب دروينج، والإشراف الفني باحترافية وجودة عالية."
+  />
+  <meta
+    name="keywords"
+    content="Etqan, اتقان, هندسة مدنية, التصميم الإنشائي, استشارات هندسية, تقسيم معماري, حصر كميات, شوب دروينج, مكتب هندسي, أعمال هندسية"
+  />
+  <meta name="author" content="Etqan" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#1f2937" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Etqan | اتقان للهندسة المدنية والتصميم الإنشائي" />
+  <meta
+    property="og:description"
+    content="حلول هندسية ومدنية باحترافية تشمل التصميم الإنشائي، التقسيم المعماري، الحصر، الشوب دروينج، والاستشارات الهندسية."
+  />
+  <meta property="og:site_name" content="Etqan" />
+  <meta property="og:locale" content="ar_AR" />
+  <meta property="og:image" content="media/logo.jpeg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Etqan | اتقان للهندسة المدنية والتصميم الإنشائي" />
+  <meta
+    name="twitter:description"
+    content="حلول هندسية ومدنية باحترافية وجودة عالية مع خدمات التصميم والإشراف والاستشارات الهندسية."
+  />
+  <meta name="twitter:image" content="media/logo.jpeg" />
+
+  <link rel="icon" type="image/jpeg" href="media/logo.jpeg" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    rel="stylesheet"
+  />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Etqan",
+    "alternateName": "اتقان",
+    "description": "شركة متخصصة في الهندسة المدنية والتصميم الإنشائي والاستشارات الهندسية وحصر الكميات والشوب دروينج.",
+    "telephone": "+20 1142772565",
+    "image": "media/logo.jpeg",
+    "areaServed": "EG",
+    "serviceType": [
+      "الهندسة المدنية",
+      "التصميم الإنشائي",
+      "الاستشارات الهندسية",
+      "حصر الكميات",
+      "الشوب دروينج",
+      "التقسيم المعماري"
+    ]
+  }
+  </script>
 </head>
 <body>
+  <header class="navbar">
+    <div class="container nav-content">
+      <!-- الشمال: المنيو -->
+      <div class="menu-area">
+        <input type="checkbox" id="menuCheckbox" class="menu-checkbox" />
 
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <img src="media/logo.jpeg" alt="الشعار" class="logo" />
+        <label for="menuCheckbox" class="menu-toggle" aria-label="فتح القائمة">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
 
-      <button class="menu-icon" id="menuToggle" aria-label="القائمة" type="button">
-        ☰
-      </button>
+        <nav class="dropdown-menu">
+          <a href="#home">الرئيسية</a>
+          <a href="#services">خدماتنا</a>
+          <a href="#projects">أعمالنا</a>
+          <a href="#contact">تواصل معنا</a>
+        </nav>
+      </div>
 
-      <nav class="nav-links" id="menu">
-        <a href="#services">الخدمات</a>
-        <a href="#works">الأعمال</a>
-        <a href="#contact">تواصل معنا</a>
-      </nav>
+      <!-- النص في النص -->
+      <div class="brand-center">Etqan</div>
+
+      <!-- الشعار يمين -->
+      <div class="logo-area">
+        <img
+          src="media/logo.jpeg"
+          alt="شعار Etqan اتقان للهندسة المدنية"
+          class="site-logo"
+          id="siteLogo"
+        />
+      </div>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-top-shape"></div>
-    <div class="hero-bottom"></div>
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>حلول هندسية ومدنية باحترافية</h1>
+      <p>تصميم - إشراف - تنفيذ - استشارات هندسية</p>
 
-    <div class="hero-content container">
-      <div class="profile-circle">
-        <img src="media/profile.jpeg" alt="Abdallah Mahmoud" class="profile-image" />
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">اطلب استشارة</a>
+        <a href="#projects" class="btn btn-secondary">شاهد أعمالنا</a>
       </div>
+    </div>
+  </section>
 
-      <h1>Abdallah Mahmoud</h1>
-      <p class="hero-subtitle">CIVIL ENGINEER</p>
-
-      <div class="hero-actions">
-        <a href="#consultation-note" class="btn btn-primary">الاستشارة الهندسية</a>
-        <a href="https://wa.me/201142772565" target="_blank" class="btn btn-whatsapp-inline">واتساب</a>
-      </div>
-
-      <p id="consultation-note" class="consultation-note">
-        للاستشارة الهندسية السريعة، اضغط على زر <strong>واتساب</strong> الموجود بجوار زر الاستشارة الهندسية للتواصل المباشر.
+  <section class="section about-section" id="about">
+    <div class="container">
+      <h2 class="section-title">من نحن</h2>
+      <p class="section-text">
+        نقدم خدمات هندسية ومدنية باحترافية تشمل التصميم، الإشراف، التنفيذ،
+        والاستشارات الفنية بما يضمن أعلى جودة ودقة في كل مشروع. في Etqan
+        نركز على تقديم حلول عملية واحترافية في مجال الهندسة المدنية والتصميم
+        الإنشائي بما يناسب احتياجات كل عميل.
       </p>
     </div>
   </section>
 
-  <section id="services" class="section section-soft">
-    <div class="container narrow">
+  <section class="section section-light" id="services">
+    <div class="container">
       <h2 class="section-title">خدماتنا</h2>
 
-      <div class="service-box">
-        <h3>1- التقسيم المعماري</h3>
-        <p>
-          يقدم لحضرتك مسقط رأسي للأدوار بطريقة تتوزع فيها الفراغات داخل المبنى بحيث يكون عملي ومريح
-          ويخدم الغرض الذي أُنشئ المبنى من أجله، بحيث تكون لكل وظيفة مساحة مناسبة وموقع صحيح.
-        </p>
-        <ul>
-          <li>توزيع الفراغات الداخلية بشكل عملي ومريح.</li>
-          <li>تحديد أفضل استخدام لكل مساحة.</li>
-          <li>مراعاة العلاقات بين الفراغات المختلفة.</li>
-          <li>الاهتمام بالتهوية والإضاءة داخل المبنى.</li>
-        </ul>
-      </div>
+      <div class="services-list">
+        <article class="service-card">
+          <div class="service-number">01</div>
+          <h3>تقسيم معماري</h3>
+          <p>
+            نقدم لحضرتك مسقط رأسي للأدوار بطريقة تتوزع فيها الفراغات داخل المبنى
+            بحيث يكون عملي ومريح ويخدم الغرض اللي المبنى معمول علشانه، بمعنى آخر
+            كل غرفة مكانها فين.
+          </p>
+          <ul>
+            <li>تحديد مساحات الغرف.</li>
+            <li>توضيح العلاقات بين الفراغات.</li>
+            <li>مراعاة التهوية والإضاءة داخل المبنى.</li>
+          </ul>
+        </article>
 
-      <div class="service-box">
-        <h3>2- التصميم الإنشائي</h3>
-        <p>
-          بعد الاستقرار على المتطلبات المعمارية، يتم إعداد التصور الإنشائي للمبنى وتحديد الأحمال على البلاطات
-          وأبعاد القطاعات للأعمدة والكمرات وكميات التسليح لكل عنصر إنشائي، مع تحقيق الأمان وتقليل التكلفة.
-        </p>
-        <ul>
-          <li>تحقيق الاستقرار والأمان الإنشائي.</li>
-          <li>اختيار النظام الإنشائي الأنسب للمشروع.</li>
-          <li>تقليل التكلفة بدون التأثير على الجودة.</li>
-          <li>الوصول إلى تصميم اقتصادي وآمن.</li>
-        </ul>
-      </div>
+        <article class="service-card">
+          <div class="service-number">02</div>
+          <h3>التصميم الإنشائي</h3>
+          <p>
+            بعد الاستقرار على المتطلبات المعمارية بنبدأ نوزع أحمال المبنى على
+            البلاطات ونحدد أبعاد القطاعات للأعمدة والكمرات وكميات التسليح في كل
+            عنصر إنشائي.
+          </p>
+          <ul>
+            <li>تحقيق الأمان الإنشائي.</li>
+            <li>تقليل التكلفة قدر الإمكان.</li>
+          </ul>
+        </article>
 
-      <div class="service-box">
-        <h3>3- الحصر والشوب دروينج</h3>
-        <p>
-          يتم إعداد الكميات التفصيلية المستخدمة في المشروع حسب اللوحات التصميمية سواء
-          (أسمنت - رمل - سن - خرسانة - حديد تسليح بأقطاره - كميات الحفر والردم)،
-          وده بيساعد في تحديد تكلفة المشروع بدقة.
-        </p>
-        <p>
-          كذلك يتم إعداد اللوحات التنفيذية التفصيلية (Shop Drawing) لتسهيل التنفيذ بالموقع
-          وتقليل الأخطاء، بداية من تفاصيل البلاطات والكمرات والأعمدة والأساسات والسلالم
-          وحتى تفاصيل الحديد والنجارة والحدادة.
-        </p>
-      </div>
+        <article class="service-card">
+          <div class="service-number">03</div>
+          <h3>الحصر والشوب دروينج</h3>
+          <p>
+            بنوفر الكميات التفصيلية المستخدمة لإنشاء المشروع حسب اللوحات
+            التصميمية سواء أسمنت، رمل، سن، خرسانة، حديد تسليح، وكميات الحفر
+            والردم، وده بيساعد بشكل أساسي في تحديد تكلفة المشروع.
+          </p>
+          <p>
+            كما نقدم اللوحات التنفيذية التفصيلية للمشروع لتسهيل التنفيذ وتقليل
+            الأخطاء أثناء العمل بالموقع.
+          </p>
+        </article>
 
-      <div class="service-box">
-        <h3>4- الاستشارات الهندسية</h3>
-        <p>
-          خدمة استشارية لمساعدتك قبل التنفيذ أو أثناءه، لمراجعة التصميم، وحل المشكلات بالموقع،
-          وتقليل التكلفة، والتأكد من مطابقة الأعمال للكود والمواصفات.
-        </p>
-        <ul>
-          <li>مراجعة التصميمات واللوحات.</li>
-          <li>حل المشاكل التنفيذية بالموقع.</li>
-          <li>تقليل الهدر والتكلفة.</li>
-          <li>مراجعة مطابقة الأعمال للكود والمواصفات.</li>
-        </ul>
+        <article class="service-card">
+          <div class="service-number">04</div>
+          <h3>الاستشارات الهندسية</h3>
+          <p>
+            خدمة تساعدك على اتخاذ القرار الصحيح في مشروعك من خلال مراجعة
+            التصميم، واكتشاف المشكلات المعمارية أو الإنشائية، وحل مشاكل الموقع،
+            وتقليل التكاليف مع الالتزام بالكود والمواصفات.
+          </p>
 
-        <a href="https://wa.me/201142772565" target="_blank" class="service-whatsapp-btn">
-          اطلب الاستشارة الآن عبر واتساب
-        </a>
+          <a
+            href="https://wa.me/201142772565"
+            target="_blank"
+            class="service-whatsapp-btn"
+            rel="noopener"
+          >
+            اطلب الاستشارة الآن عبر واتساب
+          </a>
+        </article>
       </div>
     </div>
   </section>
 
-  <section id="works" class="section">
-    <div class="container narrow">
-      <h2 class="section-title">الأعمال</h2>
-      <p class="works-note">
-        سيتم عرض صور الأعمال هنا. تقدر تغيّر المحتوى لاحقًا أو تربطه بـ Google Drive.
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">أعمالنا</h2>
+      <p class="section-subtitle">
+        يمكنك فتح ملفات المشاريع مباشرة أو تصفح مجلد الأعمال الكامل.
       </p>
 
-      <div class="works-grid">
-        <div class="work-card">
-          <img class="work-image" src="media/profile.jpg" alt="عمل 1">
-          <div class="work-info">
-            <h3>مشروع 1</h3>
-            <p>يمكنك استبدال هذه الصورة بصورة مشروعك الحقيقي.</p>
-          </div>
-        </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-icon pdf">PDF</div>
+          <h3>مشروع 1</h3>
+          <p>ملف PDF للمشروع الأول</p>
+          <a href="media/project1.pdf" target="_blank" class="project-btn" rel="noopener">
+            عرض الملف
+          </a>
+        </article>
 
-        <div class="work-card">
-          <img class="work-image" src="media/logo.jpeg" alt="عمل 2">
-          <div class="work-info">
-            <h3>مشروع 2</h3>
-            <p>يمكنك لاحقًا إضافة جاليري كامل بصور المشاريع.</p>
-          </div>
-        </div>
+        <article class="project-card">
+          <div class="project-icon pdf">PDF</div>
+          <h3>مشروع 2</h3>
+          <p>ملف PDF للمشروع الثاني</p>
+          <a href="media/project2.pdf" target="_blank" class="project-btn" rel="noopener">
+            عرض الملف
+          </a>
+        </article>
 
-        <div class="work-card">
-          <img class="work-image" src="media/profile.jpeg" alt="عمل 3">
-          <div class="work-info">
-            <h3>مشروع 3</h3>
-            <p>قسم الأعمال جاهز ويمكنك تعديله بسهولة.</p>
-          </div>
-        </div>
+        <article class="project-card">
+          <div class="project-icon pdf">PDF</div>
+          <h3>مشروع 3</h3>
+          <p>ملف PDF للمشروع الثالث</p>
+          <a href="media/project3.pdf" target="_blank" class="project-btn" rel="noopener">
+            عرض الملف
+          </a>
+        </article>
+
+        <article class="project-card drive-card">
+          <div class="project-icon drive">Drive</div>
+          <h3>كل المشاريع</h3>
+          <p>فتح مجلد الأعمال الكامل من Google Drive</p>
+          <a
+            href="https://drive.google.com/drive/folders/1g2Q67Z15S5KsFuMBp4xOqTwaU1Ym3Fm_"
+            target="_blank"
+            class="project-btn drive-btn"
+            rel="noopener"
+          >
+            فتح المجلد
+          </a>
+        </article>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section section-soft">
-    <div class="container narrow">
+  <section class="section section-light" id="contact">
+    <div class="container">
       <h2 class="section-title">تواصل معنا</h2>
 
-      <div class="contact-box">
+      <div class="contact-cards">
         <a href="tel:01142772565" class="contact-card">
-          <span class="contact-label">اتصال مباشر</span>
-          <strong>01142772565</strong>
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <h3>اتصال مباشر</h3>
+          <p>01142772565</p>
         </a>
 
-        <a href="https://wa.me/201142772565" target="_blank" class="contact-card whatsapp-card">
-          <span class="contact-label">تواصل واتساب</span>
-          <strong>راسلنا الآن</strong>
+        <a
+          href="https://wa.me/201142772565"
+          target="_blank"
+          class="contact-card whatsapp-card"
+          rel="noopener"
+        >
+          <div class="contact-icon">
+            <i class="fab fa-whatsapp"></i>
+          </div>
+          <h3>واتساب</h3>
+          <p>راسلنا الآن على واتساب</p>
         </a>
       </div>
     </div>
   </section>
 
-  <a class="floating-btn
+  <a
+    href="https://wa.me/201142772565"
+    target="_blank"
+    class="floating-btn floating-whatsapp"
+    rel="noopener"
+    aria-label="واتساب"
+  >
+    واتساب
+  </a>
+
+  <a href="tel:01142772565" class="floating-btn floating-call" aria-label="اتصال">
+    اتصال
+  </a>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 جميع الحقوق محفوظة - Etqan</p>
+    </div>
+  </footer>
+
+  <div class="logo-modal" id="logoModal">
+    <button class="logo-modal-close" id="logoModalClose" aria-label="إغلاق" type="button">
+      &times;
+    </button>
+    <img
+      src="media/logo.jpeg"
+      alt="شعار Etqan"
+      class="logo-modal-image"
+    />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
